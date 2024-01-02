@@ -1,0 +1,11 @@
+def names(a):
+    a.sort()
+    return a
+n=int(input("enter the number of students :" ))   
+name=[]
+for x in range(n):
+    a=str(input(f"enter the name of {x+1}th student : "))
+    name.append(a)
+name=names(name)    
+for x in range(n):
+     print(f"roll.no of students :  {name[x]}")
