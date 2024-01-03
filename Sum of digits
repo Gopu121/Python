@@ -1,0 +1,10 @@
+def sum(a):
+    global s 
+    s =0
+    while a != 0 :
+         d=a%10
+         s+=d
+         a//=10
+    return s
+n=int(input("enter the number> "))
+print(f"the sum of digits is :{sum(n)}")
